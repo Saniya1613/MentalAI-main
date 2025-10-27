@@ -1,10 +1,11 @@
 import { UserResource } from "@clerk/types";
-
+import CornerElements from './CornerElements';
 
 const ProfileHeader = ({ user }: { user: UserResource | null | undefined }) => {
   if (!user) return null;
   return (
     <div className="mb-10 relative bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+      <CornerElements />
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="relative">
           {user.imageUrl ? (

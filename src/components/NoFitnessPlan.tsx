@@ -1,11 +1,12 @@
 import Link from "next/link";
-
+import CornerElements from './CornerElements';
 import { Button } from "./ui/button";
 import { ArrowRightIcon } from "lucide-react";
 
 const NoFitnessPlan = () => {
   return (
     <div className="relative bg-white border border-gray-200 rounded-2xl p-12 text-center">
+      <CornerElements />
       <div className="mb-6">
         <div className="mx-auto w-20 h-20 bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-2xl flex items-center justify-center mb-4">
           <ArrowRightIcon className="w-10 h-10 text-primary" />
